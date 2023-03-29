@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    tools:context=".menuSistemaSolar">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="280dp"
+        android:layout_height="182dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/cabecera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/infoSol"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/botonsol"
+        app:layout_constraintEnd_toStartOf="@+id/infoJupiter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/infoVenus"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/botonvenus"
+        app:layout_constraintEnd_toStartOf="@+id/infoUrano"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoMercurio" />
+
+    <ImageView
+        android:id="@+id/infoMercurio"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="39dp"
+        android:src="@drawable/botonmercurio"
+        app:layout_constraintEnd_toStartOf="@+id/infoSaturno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoSol" />
+
+    <ImageView
+        android:id="@+id/infoTierra"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="59dp"
+        android:src="@drawable/botontierra"
+        app:layout_constraintEnd_toStartOf="@+id/infoNeptuno"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoVenus" />
+
+    <ImageView
+        android:id="@+id/infoMarte"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="59dp"
+        android:src="@drawable/botonmarte"
+        app:layout_constraintEnd_toStartOf="@+id/regresar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoLuna" />
+
+    <ImageView
+        android:id="@+id/infoLuna"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="59dp"
+        android:src="@drawable/botonluna"
+        app:layout_constraintEnd_toStartOf="@+id/infoPluton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/infoTierra" />
+
+    <ImageView
+        android:id="@+id/infoJupiter"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/botonjupiter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infoSol"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <ImageView
+        android:id="@+id/infoSaturno"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/botonsaturno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infoMercurio"
+        app:layout_constraintTop_toBottomOf="@+id/infoJupiter" />
+
+    <ImageView
+        android:id="@+id/infoUrano"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/botonurano"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infoVenus"
+        app:layout_constraintTop_toBottomOf="@+id/infoSaturno" />
+
+    <ImageView
+        android:id="@+id/infoNeptuno"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/botonneptuno"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infoTierra"
+        app:layout_constraintTop_toBottomOf="@+id/infoUrano" />
+
+    <ImageView
+        android:id="@+id/infoPluton"
+        android:layout_width="170dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/botonpluton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infoLuna"
+        app:layout_constraintTop_toBottomOf="@+id/infoNeptuno" />
+
+    <ImageView
+        android:id="@+id/regresar"
+        android:layout_width="170dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/botonregreso"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/infoMarte"
+        app:layout_constraintTop_toBottomOf="@+id/infoPluton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
